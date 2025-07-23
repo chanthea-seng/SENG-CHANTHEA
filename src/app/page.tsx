@@ -1,53 +1,54 @@
-import { FaGithub } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
-
 import Link from "next/link";
+import { FaGithub, FaTelegram, FaJava } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="font-sans flex flex-col items-center justify-center min-h-screen px-6 py-10 text-center gap-10">
+      {/* MAIN SECTION */}
+      <main className="flex flex-col gap-6 items-center">
+        <h6 className="text-sm text-gray-500">Hi there! My name is</h6>
+        <h1 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500">
+          Seng Chanthea
+        </h1>
+        <p className="text-lg text-gray-700 dark:text-gray-300">
+          I&apos;m a DevOps Engineer passionate about building reliable systems and automating workflows.
+        </p>
+
+        {/* NAVIGATION */}
+        <nav className="flex gap-6 flex-wrap justify-center mt-4">
+          <Link
+            className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition underline underline-offset-4"
+            href="https://nextjs.org/learn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaJava />
+            Resume
+          </Link>
+          <Link
+            className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition underline underline-offset-4"
+            href="https://github.com/chanthea-seng"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+            Project
+          </Link>
+          <Link
+            className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition underline underline-offset-4"
+            href="https://t.me/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTelegram />
+            Get in touch
+          </Link>
+        </nav>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <Link
-          className="flex items-center gap-2 underline underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          rel="noopener noreferrer"
-        >
-          <FaJava />
-          Resume
-        </Link>
-        <Link
-          className="flex items-center gap-2 underline underline-offset-4"
-          href="https://github.com/chanthea-seng"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-          Project
-        </Link>
-        <Link
-          className="flex items-center gap-2 underline underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTelegram />
-          Get in touch
-        </Link>
+
+      {/* FOOTER */}
+      <footer className="text-sm text-gray-500 mt-10">
+        &copy; 2025 - All rights reserved by Chanthea
       </footer>
     </div>
   );
