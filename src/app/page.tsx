@@ -6,12 +6,12 @@ export default function Home() {
     <div className="font-sans flex flex-col items-center justify-center min-h-screen px-6 py-10 text-center gap-10">
       {/* MAIN SECTION */}
       <main className="flex flex-col gap-6 items-center">
-        <h6 className="text-sm text-gray-500">Hi there! My name is</h6>
+        <h6 className="text-sm text-gray-500">Hello, I&apos;m</h6>
         <h1 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500">
           Seng Chanthea
         </h1>
         <p className="text-lg text-gray-700 dark:text-gray-300">
-          I&apos;m a DevOps Engineer passionate about building reliable systems and automating workflows.
+          I’m a DevOps Engineer.
         </p>
 
         {/* NAVIGATION */}
@@ -48,7 +48,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="text-sm text-gray-500 mt-10">
-        &copy; 2025 - All rights reserved by Chanthea
+        &copy; {new Date().getFullYear()} Seng Chanthea. All rights reserved.
       </footer>
     </div>
   );
