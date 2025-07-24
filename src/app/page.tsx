@@ -100,7 +100,6 @@ export default function Home() {
                 description="Royal University of Phnom Penh — B.E. in IT Engineering (2022 - Present)"
               />
               <SheetFooter>
-                <Button type="submit">Save changes</Button>
                 <SheetClose asChild>
                   <Button type="button" variant="outline">
                     Close
