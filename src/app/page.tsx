@@ -69,7 +69,7 @@ export default function Home() {
         </motion.h1>
 
         <p className="text-lg text-gray-700 dark:text-gray-300">
-          I’m a DevOps Engineer.
+          I’m a Backend Developer.
         </p>
 
         <nav className="flex gap-6 flex-wrap justify-center mt-4">
