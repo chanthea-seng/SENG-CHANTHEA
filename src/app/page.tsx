@@ -97,7 +97,7 @@ export default function Home() {
               />
               <ResumeSection
                 title="Education"
-                description="Royal University of Phnom Penh — B.E. in IT Engineering (2022 - Present)"
+                description="RUPP — B.E. in IT Engineering (2022 - Present)"
               />
               <SheetFooter>
                 <SheetClose asChild>
